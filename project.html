@@ -1,0 +1,128 @@
+<html>
+<body id="demo">
+<h1 id="heading">HTML, CSS & Java Script</h1>
+<div id="content">
+<h2>HTML</h2>
+<p>HTML stands for Hyper Text Markup Language. It is called as presentation language. It is also called as formatting language. It contains tags, attributes & entities.</p>
+<h2>CSS</h2>
+<p>CSS stands for Cascading Style Sheets. It is a style sheet language & it is used to style web pages. It contains properties & selectors. There are many properties & selectors.</p>
+<h2>Java Script</h2>
+<p>Java Script was initially object based & now it is an object oriented. It is used to add dynamic behaviour to a web page. It is also used to validate html forms.</p>
+</div>
+<input type="button" value="Stylesheet1" onclick="style1()">
+<input type="button" value="Stylesheet2" onclick="style2()">
+<input type="button" value="Stylesheet3" onclick="style3()">
+<input type="button" value="Stylesheet4" onclick="style4()">
+</body>
+<script>
+function style1()
+{
+	let body=document.getElementById("demo");
+	body.style.backgroundColor="cyan";
+	body.style.margin="50px";
+	let heading=document.getElementById("heading");
+	heading.style.fontFamily="arial";
+	heading.style.color="red";
+	heading.style.fontSize="50px";
+	heading.style.textDecoration="underline";
+	let content=document.getElementById("content");
+	content.style.borderStyle="solid";
+	content.style.padding="20px";
+	content.style.borderWidth="5px";
+	content.style.borderColor="red";
+	let headings=document.getElementsByTagName("h2");
+	for(let head of headings)
+	{
+		head.style.fontFamily="courier";
+		head.style.fontSize="30px";
+	}
+	let paragraphs=document.getElementsByTagName("p");
+	for(let para of paragraphs)
+	{
+		para.style.fontFamily="courier";
+		para.style.fontSize="20px";
+	}
+}
+function style2()
+{
+	let body=document.getElementById("demo");
+	body.style.backgroundColor="wheat";
+	body.style.margin="100px";
+	let heading=document.getElementById("heading");
+	heading.style.fontFamily="impact";
+	heading.style.color="green";
+	heading.style.fontSize="60px";
+	heading.style.textDecoration="underline overline";
+	content.style.borderStyle="double";
+	content.style.padding="30px";
+	content.style.borderWidth="5px";
+	content.style.borderColor="green";
+	let headings=document.getElementsByTagName("h2");
+	for(let head of headings)
+	{
+		head.style.fontFamily="algerian";
+		head.style.fontSize="30px";
+	}
+	let paragraphs=document.getElementsByTagName("p");
+	for(let para of paragraphs)
+	{
+		para.style.fontFamily="algerian";
+		para.style.fontSize="20px";
+	}
+}
+function style3()
+{
+	let body=document.getElementById("demo");
+	body.style.backgroundColor="yellow";
+	body.style.margin="150px";
+	let heading=document.getElementById("heading");
+	heading.style.fontFamily="georgia";
+	heading.style.color="blue";
+	heading.style.fontSize="70px";
+	heading.style.textDecoration="overline";
+	content.style.borderStyle="dashed";
+	content.style.padding="35px";
+	content.style.borderWidth="5px";
+	content.style.borderColor="blue";
+	let headings=document.getElementsByTagName("h2");
+	for(let head of headings)
+	{
+		head.style.fontFamily="magneto";
+		head.style.fontSize="30px";
+	}
+		let paragraphs=document.getElementsByTagName("p");
+	for(let para of paragraphs)
+	{
+		para.style.fontFamily="magneto";
+		para.style.fontSize="20px";
+	}
+}
+function style4()
+{
+	let body=document.getElementById("demo");
+	body.style.backgroundColor="orange";
+	body.style.margin="150px";
+	let heading=document.getElementById("heading");
+	heading.style.fontFamily="verdana";
+	heading.style.color="blue";
+	heading.style.fontSize="70px";
+	heading.style.textDecoration="overline";
+	content.style.borderStyle="solid";
+	content.style.padding="35px";
+	content.style.borderWidth="5px";
+	content.style.borderColor="white";
+	let headings=document.getElementsByTagName("h2");
+	for(let head of headings)
+	{
+		head.style.fontFamily="verdana";
+		head.style.fontSize="30px";
+	}
+		let paragraphs=document.getElementsByTagName("p");
+	for(let para of paragraphs)
+	{
+		para.style.fontFamily="verdana";
+		para.style.fontSize="20px";
+	}
+}
+</script>
+</html>
